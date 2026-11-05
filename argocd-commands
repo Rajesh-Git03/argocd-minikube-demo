@@ -1,0 +1,9 @@
+minikube start
+kubectl get nodes
+
+minikube service nginx-demo-service -n demo-app
+
+kubectl get pods -n demo-app
+kubectl get svc -n demo-app
+
+kubectl get applications -n argocd
